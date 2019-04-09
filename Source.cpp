@@ -32,7 +32,7 @@ int Modular_exponentiation(int b, /*n = (ak-1ak-2...a1a0)2,*/ int m/*positive(+)
 	     x = x % m;
 	     power= (power*power)% m ;
 		  
-	return power;
+	return x;
 }
 
 
