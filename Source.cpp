@@ -4,7 +4,20 @@ using namespace std;
 
 // int Base_b_expansion(int number, int base); //base > 1	|	number & base are positve(+)	|	done individually
 
-int Add(int a, int b);	//a & b are positve(+)
+//function for Binary Addition
+int binAddition(int a,int b) 
+{
+      int c; //carry
+      while (b != 0) {
+              //find carry and shift it left
+              c = (a & b) << 1;
+              //find the sum
+              a=a^b;
+              b=c;
+      }
+      return a; 
+}
+
 
 int Modular_exponentiation(int b, /*n = (ak-1ak-2...a1a0)2,*/ int m/*positive(+)*/)
 {
@@ -29,6 +42,19 @@ int Multiply(int a, int b);	//a & b are positive(+)
 
 int main() 
 {
-	//test here
+	//binAddition test 
+	{
+	int number1,number2, binAdd;
+ 
+	    printf("Input first integer value: ");
+	    scanf("%d",&number1);
+
+	    printf("Input second integer value: ");
+	    scanf("%d",&number2);
+
+	    binAdd=binAddition(number1,number2);
+
+	    printf("Binary Addition: %d\n",binAdd);
+	}
 	return 0;
 }	 
