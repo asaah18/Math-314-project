@@ -38,7 +38,18 @@ int Modular_exponentiation(int b, /*n = (ak-1ak-2...a1a0)2,*/ int m/*positive(+)
 
 int Multiply(int a, int b);	//a & b are positive(+)
 
-//int function();
+int gcd(int a, int b)
+{
+	int x = a;
+	int y = b;
+	while (y != 0)
+	{
+		int r = x % y;
+		x = y;
+		y = r;
+	}
+	return x;
+}
 
 int main() 
 {
