@@ -4,7 +4,7 @@ using namespace std;
 
 // int Base_b_expansion(int number, int base); //base > 1	|	number & base are positve(+)	|	done individually
 
-//function for Binary Addition
+//function for Binary Addition	|	tested
 int binAddition(int a,int b) 
 {
       int c; //carry
