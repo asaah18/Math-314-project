@@ -1,6 +1,6 @@
 # math-314-project
 
-1- Abdurrahman alhomaidany  361112479 عبدالرحمن الحمداني
+1- Abdurrahman alhomaidany  361112479
 2- Abdullah Alkhulifi
 
 
@@ -11,7 +11,7 @@
 
 
 
-Algorithm list:
+# Algorithm list
 
 1-Constructing Base b Expansions
 procedure base b expansion(n, b: positive integers with b > 1)
